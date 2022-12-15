@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/BossBattle.unity
+    guid: ff58ec08802e81640ac39d58d0e3c270
   m_configObjects: {}

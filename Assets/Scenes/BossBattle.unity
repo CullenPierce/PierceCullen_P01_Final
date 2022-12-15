@@ -1869,6 +1869,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &1479843112
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1479843113}
+  m_Layer: 0
+  m_Name: spawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1479843113
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479843112}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.812}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1716943006}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1606565576
 GameObject:
   m_ObjectHideFlags: 0
@@ -2326,7 +2357,7 @@ GameObject:
   - component: {fileID: 1716943007}
   - component: {fileID: 1716943008}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Boss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2410,6 +2441,7 @@ Transform:
   m_Children:
   - {fileID: 1642859743}
   - {fileID: 712820642}
+  - {fileID: 1479843113}
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2425,6 +2457,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76e183b31964f9b4295307d827c3fd0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _projectile: {fileID: 3486465455774360378, guid: 4739ff32b852234408807a9ae422c2c2, type: 3}
+  _spawnPoint: {fileID: 1479843113}
+  projectileFrequency: 2
   playerLocation: {fileID: 732590194}
   _health: 10
   _bossSpeed: 1
